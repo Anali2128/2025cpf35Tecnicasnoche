@@ -1,0 +1,24 @@
+Centro de Formacion Profesional Nro 35
+
+Trayecto Programador 
+
+curso:  Tecnicas de Progamacion  120 hs.
+dias: Martes (virtual) jueves (virtual)
+horario: 19:00 a 22:00hs
+
+profe: Carlos Rios        c.rios@bue.edu.ar
+
+github:  crios2020.github.io
+        crios2020.github.io/demo
+
+Lenguaje:  Javascript
+
+software: visual studio code.
+
+
+materiales:  
+            
+             link de meet:  https://meet.google.com/apo-fedn-cwv?pli=1
+            github:
+            codeshere: https://codeshare.io/crios2020
+            wsp: https://chat.whatsapp.com/HGj8SwUiumZJrG6vEClAWA
