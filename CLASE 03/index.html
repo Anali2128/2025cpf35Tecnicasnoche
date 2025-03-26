@@ -1,0 +1,86 @@
+<script src="util.js"></script>
+<script>
+
+    //clase 3
+
+     // tipo de datos punto flotante (decimales)
+
+
+
+    var1=3.14
+
+    // . signo decimal
+
+    // 1,000,000.50
+
+    document.writeln("var1= "+var1+"<br>")
+    document.writeln("var1= "+(var1/3)+"<br>")
+
+    nro1=10
+    nro2=100
+    nro3=1000
+    document.writeln("nro1= "+(nro1/3)+"<br>")
+    document.writeln("nro2= "+(nro2/3)+"<br>")
+    document.writeln("nro3= "+(nro3/3)+"<br>")
+
+    //ingreso de  valores de usuario
+    nombre=prompt("Ingrese su nombre: ")
+
+    document.writeln("Hola "+nombre)
+    //hablar("hola "+nombre)
+
+
+
+
+    //fecha y hora
+    fecha=new Date()           //variable de fecha y hora
+    document.writeln(fecha+"<br>")
+    //hablar(fecha+"<br>")
+
+
+    document.writeln(fecha.getYear()+"<br>")   //125
+    document.writeln(fecha.getYear()+1900+"<br>")     //2025
+    document.writeln(fecha.getFullYear()+"<br>")        //2025
+
+
+    document.writeln(fecha.getMonth()+"<br>")      //2
+
+
+    /*
+        0- Enero
+        1-Febrero
+        2-Marzo
+        3-Abril
+        4-Mayo
+        5-Junio
+        6-Julio
+        7-Agosto
+        8-Septiembre
+        9-ocutbre
+        10-noviembre
+        11-Diciembre
+
+    */
+
+    document.writeln(fecha.getDate()+"<br>")   //25
+    document.writeln(fecha.getDay()+"<br>")    //2
+
+    /*
+        0-domingo
+        1-Lunes
+        2-Martes
+        3-Miercoles
+        4-Jueves
+        5-Viernes
+        6-Sabado
+    
+    */
+
+
+
+    //Hora
+    document.writeln(fecha.getHours()+"<br>")      //20 horas
+    document.writeln(fecha.getMinutes()+"<br>")    //54 minutos
+    document.writeln(fecha.getSeconds()+"<br>")     // segundos.
+
+</script>
