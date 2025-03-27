@@ -93,9 +93,22 @@
     //para salir de vacaciones necesitamos plata y buen tiempo
 
     document.writeln((TengoPlata&&LindoTiempo)+"<br>")   // false
+//operador not  ! 
+    document.writeln(log1+"<br>")     //true
+    document.writeln(!log1+"<br>")    //false
+    document.writeln(!!log1+"<br>")    //true
+    document.writeln(!!!log1+"<br>")   //false
+    document.writeln(!!!!log1+"<br>")  //true
 
 
 
+    document.writeln((nro1<=10 && !log1==true)+"<br>")
+    // dos expresiones unidas por el operador and la primera es si nro1 es menor o igual a 10 (true) y la segunda falso es igual a verdad (false) entonces v + f = f
+
+    document.writeln((nro1>=10+2 && !!log1==true)+"<br>")
+    // la primer expresion es si nro1 es false 7 es < a 10+2 y la segunda doble negacion es true   f + v   = F
+
+    
     //uso de constantes
         const PI=3.14
     //PI++    //error las constantes no pueden cambiar su valor
