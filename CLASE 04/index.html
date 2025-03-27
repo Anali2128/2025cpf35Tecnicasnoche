@@ -5,15 +5,101 @@
 
     // Operadores
 
-        nro1=5
+        nro1=5     //5
         nro2=7
 
         document.writeln(nro1+"<br>")
         document.writeln(nro2+"<br>")
 
     // operador de asignacion  =
-        nro1=nro2
+        nro1=nro2    //7
+        //<----
+
         document.writeln(nro1+"<br>")
         document.writeln(nro2+"<br>")
+
+
+    //Operadores incrementales
+
+    //sumar 1 a nro 1     ++
+
+        nro1++     //nro1=nro1+1   //8
+        document.writeln(nro1+"<br>")
+
+    //restar 1 a nro1  --
+
+        nro1--     //nro1= nro1-1   //7
+        document.writeln(nro1+"<br>")
+
+    // sumar 5 a nro1
+        nro1+=5      //nro1=nro1+5
+        document.writeln(nro1+"<br>")
+
+    //restar 5 a nro1
+        nro1-=5       //nro1=nro1-5   //7
+        document.writeln(nro1+"<br>")
+
+    //multiplicar x 5 a nro1   *=
+        nro1*=5         //nro1=nro1*5
+        document.writeln(nro1+"<br>")
+    //dividir / 5 a nro1 /=
+        nro1/=5      //nro1=nro1/5
+        document.writeln(nro1+"<br>")
+    /*
+        //operadores logicos o booleanos
+            ==             COMPARACION EQUALS
+            !=             NO EQUALS
+            !              NOT
+            <  <= => >     comparacion numerica
+
+        operadores de logica
+
+            &&  and   (& shift6)
+            ||   or   (| alt gr 1)
+        Tabla de verdad 
+            expresion de true o false
+
+            X    Y    OR    AND
+            F    F    F     F
+            F    V    V     F
+            V    F    V     F
+            V    V    V     V
+
+    */
+    nro1=5
+    nro2=7
+    log1=true
+    log2=false
+
+
+    LindoTiempo=true
+    TengoPlata=false
+
+    document.writeln((nro1==nro2)+"<br>")   //operador de comparacion false
+    document.writeln((nro1==nro2-2)+"<br>")    //true
+
+
+    document.writeln((nro1!=nro2)+"<br>")    //true  compara no iguales
+    document.writeln((nro1!=5)+"<br>")       //false
+
+    document.writeln((nro1<nro2)+"<br>")     // true
+    document.writeln((nro1<5)+"<br>")        //false
+    document.writeln((nro1<=5)+"<br>")       // true
+
+    document.writeln((log1||log2)+"<br>")    //true
+    document.writeln((log1&&log2)+"<br>")    //false
+
+    document.writeln("salimos de vacaciones!!<br>")
+    //para salir de vacaciones necesitamos plata y buen tiempo
+
+    document.writeln((TengoPlata&&LindoTiempo)+"<br>")   // false
+
+
+
+    //uso de constantes
+        const PI=3.14
+    //PI++    //error las constantes no pueden cambiar su valor
+
+        document.writeln("--Fin del Programa--")
 </script>
 
