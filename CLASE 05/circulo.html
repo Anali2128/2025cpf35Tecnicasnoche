@@ -10,13 +10,15 @@ Trabajo 3
 */
 
 //INGRESO DE DATOS
+radio=parseFloat(prompt('Ingrese el radio del circulo: '))
 
-base =parseFloat(prompt('Ingrese la base del circulo: '))
-altura =parseFloat(prompt('Ingrese la altura del circulo: '))
+// impresion de los datos ingresados
+document.writeln('Los datos ingresados son: <br>')
+document.writeln('El radio del circulo es: '+radio+'<br>')
 
 //calculo del area y perimetro
-area = (base*altura)/2
-perimetro = base*altura
+area = (Math.PI*Math.pow(radio,2)).toFixed(4)
+perimetro = (Math.PI*2*radio).toFixed(4)
 
 //impresion de los datos
 document.writeln('El area del circulo es: '+area+'<br>')

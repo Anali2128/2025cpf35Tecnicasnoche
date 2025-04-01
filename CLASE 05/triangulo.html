@@ -10,20 +10,18 @@ Trabajo 2
 
 //INGRESO DE DATOS
 
-base =parseFloat(prompt('Ingrese la base del triangulo: '))
-altura =parseFloat(prompt('Ingrese la altura del triangulo: '))
-
+base=parseFloat(prompt('Ingrese la base del triangulo: '))
+altura=parseFloat(prompt('Ingrese la altura del triangulo: '))
 
 // impresion de los datos ingresados
+document.writeln('Los datos ingresados son: <br>')
 document.writeln('la base del triangulo es: '+base+'<br>')
 document.writeln('la base del triangulo es: '+altura+'<br>')
 
 //calculo del area y perimetro
-area = (base*altura)/2
-perimetro = (base+altura+Math.sqrt(Math.pow(base,2)+Math.pow(altura,2))).toFixed(4)
+area=(base*altura)/2
+perimetro=(base+altura+Math.sqrt(Math.pow(base,2)+Math.pow(altura,2))).toFixed(4)
 //perimetro = (base+altura+Math.hypot(base,altura)).toFixed(4)
-
-
 
 //impresion de los datos
 document.writeln('El area del triangulo es: '+area+'<br>')
