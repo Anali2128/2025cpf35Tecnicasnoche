@@ -1,0 +1,26 @@
+<script>
+
+/*
+Trabajo 1
+
+-- Crear el  archivo rectangulo.html
+-- el usuario debe ingresar (prompt) 2 valores correspóndientes a 
+-- la base y altura del rectángulo
+-- calcular e imprimir (document.writeln) el perímetro del rectángulo
+-- calcular e imprimir (document.writeln) el área (superficie) del rectángulo
+
+*/
+
+//solicitud de ingreso de datos
+base =parseFloat(prompt('Ingrese la base del rectangulo: '))
+altura =parseFloat(prompt('Ingrese la altura del rectangulo: '))
+area = base*altura
+perimetro = 2*(base+altura)
+//tambien puede ser perimetro = 2*base + 2* altura
+
+//impresion de los datos
+document.writeln('El area del rectangulo es: '+area+'<br>')
+document.writeln('El perimetro del rectangulo es: '+perimetro+'<br>')
+
+
+</script>
