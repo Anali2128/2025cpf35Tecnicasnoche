@@ -1,0 +1,328 @@
+<script>
+
+        // Ejercicio 1 - Asignación básica
+        // Analice el código a continuación y complete la tabla correspondiente. Luego realice la codificación
+        // para confirmar que ha completado la tabla correctamente.
+
+        document.writeln("A"+"<br>")
+        x = 10                             
+        y = 20                             
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+
+        document.writeln("B"+"<br>")
+        x = x + 5                              //15
+        y = y + 10                            //30
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+
+        document.writeln("C"+"<br>")
+        x = x - 5                              //10
+        y = y - 10                             //20
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+
+        document.writeln("D"+"<br>")
+        x = x * 3                              //30
+        y = y * 5                              //100
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+
+        document.writeln("E"+"<br>")
+        x = x / 2                             //15   
+        y = y / 4                             //25
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+
+        // Tabla para completar:
+
+        //              X           Y
+        //A            10           20
+        //B            15           30
+        //C            10           20
+        //D            30           100
+        //E            15           25 
+
+
+        // Ejercicio 2 - Asignación compacta
+        // Analice el código a continuación y complete la tabla correspondiente. Luego realice la codificación
+        // para confirmar que ha completado la tabla correctamente.
+
+        document.writeln("A"+"<br>")
+        x = 10                                
+        y = 20                               
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+        document.writeln("B"+"<br>")
+        x += 5                    //10+5 =15            
+        y -= 15                   //20-15=5             
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+        document.writeln("C"+"<br>")
+        x++                          //15+1=16    
+        y--                          //5-1=4          
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+        document.writeln("D"+"<br>")
+        x *= 4                       //  16*4=64        
+        y *= -3                      // 4*-3=-12         
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+        document.writeln("E"+"<br>")
+        x /= 2                       //64/2=32          
+        y /= 4                       //-12/4=-3         
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+        
+        // Tabla para completar:
+
+        //              X           Y
+        //A            10           20 
+        //B            15           5
+        //C            16           4 
+        //D            64          -12
+        //E            32           -3
+
+
+        //Ejercicio 3 - Operadores aritméticos
+
+        document.writeln("A"+"<br>")
+        x = 10                             
+        y = 20                             
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+
+        document.writeln("B"+"<br>")
+        x = x + y                         // 10+20=30 
+        y = y + x                          //20+10=30
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+
+        document.writeln("C"+"<br>")
+        x= x - y                          //10-20=-10     
+        y= y - x                          //20-10=10    
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+
+        document.writeln("D"+"<br>")
+        x=x * y                         //10*20=200                
+        y=x * x                         //10*10=100    
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+
+        document.writeln("E"+"<br>")                
+        x= y / x                          //20/10=2     
+        y= x / y                          //10/20=0.5       
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+
+        // Tabla para completar:
+
+        //              X           Y
+        //A             10          20   
+        //B             30          30
+        //C            -10          10
+        //D             200         100
+        //E             2           0.5
+
+
+        //Ejercicio 4- Operadores aritméticos con asignación compacta
+        
+        document.writeln("A"+"<br>")
+        x = 5
+        y = 10
+        document.writeln(x+"<br>")                 
+        document.writeln(y+"<br>")                  
+
+        document.writeln("B"+"<br>")
+        x += y                      //5+10=15
+        y += x                      //10+15=25
+        document.writeln(x+"<br>")                  
+        document.writeln(y+"<br>")                 
+
+
+        document.writeln("C"+"<br>")
+        x -= y                   //15-25=-10  x= x-y toma el ultimo valor de x
+        y -= x                   //25-(-10)=35 y= y-x toma el ultimo valor de y
+        document.writeln(x+"<br>")                 
+        document.writeln(y+"<br>")                  
+
+        document.writeln("D"+"<br>")
+        x *= y                //x=x*y x=-10*35=-350
+        y *= x                //y=y*x y=35*-350=-12250
+        document.writeln(x+"<br>")                  
+        document.writeln(y+"<br>")                  
+
+
+        document.writeln("E"+"<br>")
+        x /= y                 //x=x/y x=-350/-12250=0.02857142857142857               
+        y /= y                 //y=y/y y=-12250/-12250=1              
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+
+        // Tabla para completar:
+
+        //              X           Y
+        //A             5           10          
+        //B             15          25         
+        //C             -10         35       
+        //D            -350        -12250
+        //E             0.02857     1
+
+        //Ejercicio 5- Operadores Aritméticos con asignación múltiple (suma y resta)
+
+        document.writeln("A"+"<br>")
+        x = 5                   //5
+        y = 10                  //10
+        suma = 0                //0
+        resta = 0               //0
+        document.writeln(x+"<br>")           //5      
+        document.writeln(y+"<br>")           //10       
+        document.writeln(suma+"<br>")              
+        document.writeln(resta+"<br>")             
+
+
+        document.writeln("B"+"<br>")
+        suma = x + y                    //5+10=15       
+        resta = x - y                   //5-10=-5       
+        document.writeln(x+"<br>")         //5         
+        document.writeln(y+"<br>")         //10               
+        document.writeln(suma+"<br>")
+        document.writeln(resta+"<br>")
+
+        document.writeln("C"+"<br>")
+        suma = x + x                   //5+5=10        
+        resta = y - y                  //10-10=0        
+        document.writeln(x+"<br>")            //5      
+        document.writeln(y+"<br>")            //10      
+        document.writeln(suma+"<br>")
+        document.writeln(resta+"<br>")
+
+        document.writeln("D"+"<br>")
+        suma = x + y + x                 //5+10+5=20      
+        resta = x - x - 20               //5-5-20=-20      
+        document.writeln(x+"<br>")          //5       
+        document.writeln(y+"<br>")          //10       
+        document.writeln(suma+"<br>")
+        document.writeln(resta+"<br>")
+
+        document.writeln("E"+"<br>")
+        suma = y + x + x                      //10+5+5=20
+        resta = -x - y -y                     //-5-10-10=-25 
+        document.writeln(x+"<br>")
+        document.writeln(y+"<br>")
+        document.writeln(suma+"<br>")
+        document.writeln(resta+"<br>")
+
+        // Tabla para completar:
+
+        //              X           Y           suma        resta
+        //A             5           10           0           0
+        //B             5           10           15          -5
+        //C             5           10           10           0
+        //D             5           10           20          -20
+        //E             5           10           20          -25
+
+       
+
+        //Ejercicio 6- Operadores Aritméticos con asignación múltiple (producto y división)
+
+        document.writeln("A"+"<br>")
+        x = 5               //5
+        y = 10              //10
+        multi = 1           //1
+        division = 1        //1
+        document.writeln(x+"<br>")                  
+        document.writeln(y+"<br>")                 
+        document.writeln(multi+"<br>")             
+        document.writeln(division+"<br>")          
+        
+        document.writeln("B"+"<br>")
+        multi = x * y                   //5*10=50
+        division = x / y                //5/10=0.5
+        document.writeln(multi+"<br>")              
+        document.writeln(division+"<br>")           
+
+        document.writeln("C"+"<br>")
+        multi = x * x              //5*5=25
+        division = y / y           //10/10=1
+        document.writeln(multi+"<br>")              
+        document.writeln(division+"<br>")           
+        
+        document.writeln("D"+"<br>")
+        multi = x * y * x                //5*10*5=250      
+        division = y / x                 //10/5=2      
+        document.writeln(multi+"<br>")
+        document.writeln(division+"<br>")
+        
+        document.writeln("E"+"<br>")
+        multi= x * (-y)                   //5*(-10)=-50    
+        division= y / (-x)                //10/(-5)=-2     
+        document.writeln(multi+"<br>")
+        document.writeln(division+"<br>")
+       
+        // Tabla para completar:
+
+        //              X           Y           multi       division
+        //A             5           10          1           1
+        //B             5           10          50          0.5
+        //C             5           10          25          1
+        //D             5           10          250         2
+        //E             5           10          -50         -2
+
+        
+        //Ejercicio 7- Operador Resto   %
+        document.writeln("A"+"<br>")
+        n1 = 20             //20
+        n2 = 2              //2 
+        n3 = n1 % n2        //n3=20%2=0
+        document.writeln(n3+"<br>")        
+
+        document.writeln("A"+"<br>")
+        n1 = 15
+        n2 = 2
+        n3 = n1 % n2        //n3=15%2=1
+        document.writeln(n3+"<br>")         
+
+        document.writeln("C"+"<br>")
+        n1 = 3
+        n2 = 20
+        n3 = n2 % n1      //n3=20%3=2
+        document.writeln(n3+"<br>")         
+
+        document.writeln("D"+"<br>")
+        n1 = 3
+        n2 = 15
+        n3 = n2 % n1       //n3=15%3=0
+        document.writeln(n3+"<br>")         
+        
+                // Tabla para completar:
+
+        //             n1       n2      n3
+        //A            20       2       0
+        //B            15       2       1
+        //C            3        20      2
+        //D            3        15      0
+        
+        //Ejercicio 8 - Cadenas de Caracteres
+        document.writeln("A"+"<br>")
+        palabra_1 = "Hola"
+        palabra_2 = "Mundo"
+        frase = ""
+        document.writeln(palabra_1+"<br>")     //hola     
+        document.writeln(palabra_2+"<br>")     //mundo    
+        document.writeln(frase+"<br>")            
+
+        document.writeln("B"+"<br>")
+        frase = palabra_1 + palabra_2          
+        document.writeln(palabra_1+"<br>")   //hola
+        document.writeln(palabra_2+"<br>")   //mundo
+        document.writeln(frase+"<br>")   //hola mundo           
+
+
+        // Tabla para completar:
+
+        //             palabra1         palabra2        frase
+        //A            hola             mundo  
+        //B            hola             mundo           hola mundo
+</script>
