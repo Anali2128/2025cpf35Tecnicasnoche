@@ -94,25 +94,25 @@
 
         document.writeln("B"+"<br>")
         x = x + y                         // 10+20=30 
-        y = y + x                          //20+10=30
+        y = y + x                          //20+30=50
         document.writeln(x+"<br>")
         document.writeln(y+"<br>")
 
         document.writeln("C"+"<br>")
-        x= x - y                          //10-20=-10     
-        y= y - x                          //20-10=10    
+        x= x - y                          //30-50=-20   
+        y= y - x                          //50-(-20)=70    
         document.writeln(x+"<br>")
         document.writeln(y+"<br>")
 
         document.writeln("D"+"<br>")
-        x=x * y                         //10*20=200                
-        y=x * x                         //10*10=100    
+        x=x * y                         //     -20*70=-1400           
+        y=x * x                         //      -1400*-1400=1960000
         document.writeln(x+"<br>")
         document.writeln(y+"<br>")
 
         document.writeln("E"+"<br>")                
-        x= y / x                          //20/10=2     
-        y= x / y                          //10/20=0.5       
+        x= y / x                          //   1960000/-1400=-1400
+        y= x / y                          //   -1400/1960000=0.0007142857142857143  
         document.writeln(x+"<br>")
         document.writeln(y+"<br>")
 
@@ -120,10 +120,10 @@
 
         //              X           Y
         //A             10          20   
-        //B             30          30
-        //C            -10          10
-        //D             200         100
-        //E             2           0.5
+        //B             30          50
+        //C            -20          70
+        //D            -1400        1960000
+        //E            -1400        0.0007142857142857143
 
 
         //Ejercicio 4- Operadores aritméticos con asignación compacta
@@ -172,47 +172,47 @@
         //Ejercicio 5- Operadores Aritméticos con asignación múltiple (suma y resta)
 
         document.writeln("A"+"<br>")
-        x = 5                   //5
-        y = 10                  //10
-        suma = 0                //0
-        resta = 0               //0
+        x = 5                  
+        y = 10                  
+        suma = 0                
+        resta = 0               
         document.writeln(x+"<br>")           //5      
         document.writeln(y+"<br>")           //10       
-        document.writeln(suma+"<br>")              
-        document.writeln(resta+"<br>")             
+        document.writeln(suma+"<br>")         //0     
+        document.writeln(resta+"<br>")         //0    
 
 
         document.writeln("B"+"<br>")
-        suma = x + y                    //5+10=15       
-        resta = x - y                   //5-10=-5       
-        document.writeln(x+"<br>")         //5         
-        document.writeln(y+"<br>")         //10               
-        document.writeln(suma+"<br>")
-        document.writeln(resta+"<br>")
+        suma = x + y                           
+        resta = x - y                          
+        document.writeln(x+"<br>")           //5      
+        document.writeln(y+"<br>")             //10       
+        document.writeln(suma+"<br>")     //5+10=15
+        document.writeln(resta+"<br>")   //5-10=-5
 
         document.writeln("C"+"<br>")
-        suma = x + x                   //5+5=10        
-        resta = y - y                  //10-10=0        
+        suma = x + x                         
+        resta = y - y                          
         document.writeln(x+"<br>")            //5      
         document.writeln(y+"<br>")            //10      
-        document.writeln(suma+"<br>")
-        document.writeln(resta+"<br>")
+        document.writeln(suma+"<br>")           //5+5=10 
+        document.writeln(resta+"<br>")         //10-10=0
 
         document.writeln("D"+"<br>")
-        suma = x + y + x                 //5+10+5=20      
-        resta = x - x - 20               //5-5-20=-20      
-        document.writeln(x+"<br>")          //5       
-        document.writeln(y+"<br>")          //10       
-        document.writeln(suma+"<br>")
-        document.writeln(resta+"<br>")
+        suma = x + y + x                       
+        resta = x - x - 20                     
+        document.writeln(x+"<br>")                //5 
+        document.writeln(y+"<br>")               //10
+        document.writeln(suma+"<br>")      //5+10+5=20
+        document.writeln(resta+"<br>")      //5-5-20=-20  
 
         document.writeln("E"+"<br>")
-        suma = y + x + x                      //10+5+5=20
-        resta = -x - y -y                     //-5-10-10=-25 
-        document.writeln(x+"<br>")
-        document.writeln(y+"<br>")
-        document.writeln(suma+"<br>")
-        document.writeln(resta+"<br>")
+        suma = y + x + x                      
+        resta = -x - y -y                     
+        document.writeln(x+"<br>")       //5
+        document.writeln(y+"<br>")        //10
+        document.writeln(suma+"<br>")   //10+5+5=20
+        document.writeln(resta+"<br>")  //-5-10-10=-25 
 
         // Tabla para completar:
 
@@ -223,44 +223,44 @@
         //D             5           10           20          -20
         //E             5           10           20          -25
 
-       
+        
 
         //Ejercicio 6- Operadores Aritméticos con asignación múltiple (producto y división)
 
         document.writeln("A"+"<br>")
-        x = 5               //5
-        y = 10              //10
-        multi = 1           //1
-        division = 1        //1
-        document.writeln(x+"<br>")                  
-        document.writeln(y+"<br>")                 
-        document.writeln(multi+"<br>")             
-        document.writeln(division+"<br>")          
+        x = 5               
+        y = 10              
+        multi = 1           
+        division = 1        
+        document.writeln(x+"<br>")             //5     
+        document.writeln(y+"<br>")             //10 
+        document.writeln(multi+"<br>")         //1    
+        document.writeln(division+"<br>")      //1   
         
         document.writeln("B"+"<br>")
-        multi = x * y                   //5*10=50
-        division = x / y                //5/10=0.5
-        document.writeln(multi+"<br>")              
-        document.writeln(division+"<br>")           
+        multi = x * y                   
+        division = x / y                
+        document.writeln(multi+"<br>")             //5*10=50 
+        document.writeln(division+"<br>")          //5/10=0.5 
 
         document.writeln("C"+"<br>")
-        multi = x * x              //5*5=25
-        division = y / y           //10/10=1
-        document.writeln(multi+"<br>")              
-        document.writeln(division+"<br>")           
+        multi = x * x              
+        division = y / y           
+        document.writeln(multi+"<br>")         //5*5=25     
+        document.writeln(division+"<br>")      //10/10=1    
         
         document.writeln("D"+"<br>")
-        multi = x * y * x                //5*10*5=250      
-        division = y / x                 //10/5=2      
-        document.writeln(multi+"<br>")
-        document.writeln(division+"<br>")
+        multi = x * y * x                      
+        division = y / x                       
+        document.writeln(multi+"<br>")     //5*10*5=250
+        document.writeln(division+"<br>")  //10/5=2
         
         document.writeln("E"+"<br>")
-        multi= x * (-y)                   //5*(-10)=-50    
-        division= y / (-x)                //10/(-5)=-2     
-        document.writeln(multi+"<br>")
-        document.writeln(division+"<br>")
-       
+        multi= x * (-y)                       
+        division= y / (-x)                     
+        document.writeln(multi+"<br>")     //5*(-10)=-50
+        document.writeln(division+"<br>")  //10/(-5)=-2
+        
         // Tabla para completar:
 
         //              X           Y           multi       division
@@ -271,6 +271,14 @@
         //E             5           10          -50         -2
 
         
+        document.writeln("-- Operador Resto % --<br>")
+        document.writeln((15%2)+"<br>")         //1
+        document.writeln((14%2)+"<br>")         //0
+        document.writeln((-14%2)+"<br>")        //0
+        document.writeln((-15%2)+"<br>")        //-1
+
+
+
         //Ejercicio 7- Operador Resto   %
         document.writeln("A"+"<br>")
         n1 = 20             //20
@@ -278,7 +286,7 @@
         n3 = n1 % n2        //n3=20%2=0
         document.writeln(n3+"<br>")        
 
-        document.writeln("A"+"<br>")
+        document.writeln("B"+"<br>")
         n1 = 15
         n2 = 2
         n3 = n1 % n2        //n3=15%2=1
