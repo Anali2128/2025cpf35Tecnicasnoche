@@ -1,5 +1,4 @@
 <script>
-
 /*
 Trabajo 3
 -- Crear el  archivo circulo.html
@@ -8,20 +7,18 @@ Trabajo 3
 -- calcular e imprimir (document.writeln) el perímetro del circulo
 -- calcular e imprimir (document.writeln) el área (superficie) del circulo
 */
+//Ingreso de datos
+radio=parseFloat(prompt("Ingrese la base el radio: "))
 
-//INGRESO DE DATOS
-radio=parseFloat(prompt('Ingrese el radio del circulo: '))
+//Imprimir los datos ingresados
+document.writeln("radio: "+radio+"<br>")
 
-// impresion de los datos ingresados
-document.writeln('Los datos ingresados son: <br>')
-document.writeln('El radio del circulo es: '+radio+'<br>')
+//Calculo de superficie y perímetro
+perimetro=(Math.PI*radio*2).toFixed(4)
+//superficie=(Math.PI*radio*radio).toFixed(4)
+superficie=(Math.PI*Math.pow(radio,2)).toFixed(4)
 
-//calculo del area y perimetro
-area = (Math.PI*Math.pow(radio,2)).toFixed(4)
-perimetro = (Math.PI*2*radio).toFixed(4)
-
-//impresion de los datos
-document.writeln('El area del circulo es: '+area+'<br>')
-document.writeln('El perimetro del circulo es: '+perimetro+'<br>')
+document.writeln("perímetro: "+perimetro+"<br>")
+document.writeln("superficie: "+superficie+"<br>")
 
 </script>

@@ -1,0 +1,71 @@
+<!-- <script src="util.js"></script> -->
+<script src="https://crios2020.github.io/js/util.js"></script>
+<script>
+    frase = "Hoy es "
+
+    fecha = new Date()
+
+    diaSem = fecha.getDay()
+
+    if (diaSem == 0) frase += "domingo "
+    if (diaSem == 1) frase += "lunes "
+    if (diaSem == 2) frase += "martes "
+    if (diaSem == 3) frase += "miércoles "
+    if (diaSem == 4) frase += "jueves "
+    if (diaSem == 5) frase += "viernes "
+    if (diaSem == 6) frase += "sábado "
+
+    diaMes = fecha.getDate()
+    frase+=diaMes+" de "
+
+    mes=fecha.getMonth()
+    if (mes == 0)   frase += "enero "
+    if (mes == 1)   frase += "febrero "
+    if (mes == 2)   frase += "marzo "
+    if (mes == 3)   frase += "abril "
+    if (mes == 4)   frase += "mayo "
+    if (mes == 5)   frase += "junio "
+    if (mes == 6)   frase += "julio "
+    if (mes == 7)   frase += "agosto "
+    if (mes == 8)   frase += "septiembre "
+    if (mes == 9)   frase += "octubre "
+    if (mes == 10)  frase += "noviembre "
+    if (mes == 11)  frase += "diciembre "
+
+    anio=fecha.getFullYear()
+    frase+="de "+anio
+
+    zona=Intl.DateTimeFormat().resolvedOptions().timeZone
+    zona=zona.replace("/"," ")
+    zona=zona.replace("_"," ")
+
+    frase+=", en "+zona
+
+    temperatura=getTemperatura()
+    clima=getClima()
+
+    frase+=", la temperatura es "+temperatura+" grados centígrados"
+
+    frase+=", hay "+clima+", y esta "
+
+    /*
+        temperatura<5                       frio polar
+        temperatura>=5 && temperatura <10   frio
+        temperatura>=10 && temperatura <15  fresco
+        temperatura>=15 && temperatura <25  agradable
+        temperatura>=25 && temperatura <30  calido
+        temperatura>=30                     muy caluroso
+    */
+
+    if(temperatura<5)                       frase+="frio polar"      
+    if(temperatura>=5 && temperatura<10)    frase+="frio"   
+    if(temperatura>=15 && temperatura<25)   frase+="agradable"   
+    if(temperatura>=25 && temperatura<30)   frase+="calido"   
+    if(temperatura>=30)                     frase+="muy caluroso"   
+
+    if(clima.includes("lluvi") || clima.includes("llov"))
+            frase+=", salir con paraguas"
+
+    document.writeln(frase)     
+    //hablar(frase)
+</script>

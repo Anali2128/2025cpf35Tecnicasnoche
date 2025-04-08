@@ -1,30 +1,28 @@
 <script>
-    /*
+/*
 Trabajo 2
 -- Crear el  archivo triangulo.html
 -- el usuario debe ingresar (prompt) 2 valores correspóndientes a 
--- el base y altura del triangulo
+-- el base y altura de un triangulo rectangulo 
 -- calcular e imprimir (document.writeln) el perímetro del triangulo
 -- calcular e imprimir (document.writeln) el área (superficie) del triangulo
 */
 
-//INGRESO DE DATOS
+//Ingreso de datos
+base=parseFloat(prompt("Ingrese la base del triángulo: "))
+altura=parseFloat(prompt("Ingrese la altura del triángulo: "))
 
-base=parseFloat(prompt('Ingrese la base del triangulo: '))
-altura=parseFloat(prompt('Ingrese la altura del triangulo: '))
+//Imprimir los datos ingresados
+document.writeln("base: "+base+"<br>")
+document.writeln("altura: "+altura+"<br>")
 
-// impresion de los datos ingresados
-document.writeln('Los datos ingresados son: <br>')
-document.writeln('la base del triangulo es: '+base+'<br>')
-document.writeln('la base del triangulo es: '+altura+'<br>')
+//Calculo de superficie y perímetro
+//perimetro=(base+altura+Math.sqrt(Math.pow(base,2)+Math.pow(altura,2))).toFixed(4)
+perimetro=(base+altura+Math.hypot(base,altura)).toFixed(4)
+superficie=base*altura/2
 
-//calculo del area y perimetro
-area=(base*altura)/2
-perimetro=(base+altura+Math.sqrt(Math.pow(base,2)+Math.pow(altura,2))).toFixed(4)
-//perimetro = (base+altura+Math.hypot(base,altura)).toFixed(4)
+document.writeln("perímetro: "+perimetro+"<br>")
+document.writeln("superficie: "+superficie+"<br>")
 
-//impresion de los datos
-document.writeln('El area del triangulo es: '+area+'<br>')
-document.writeln('El perimetro del triangulo es: '+perimetro+'<br>')
 
 </script>

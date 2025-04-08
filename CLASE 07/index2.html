@@ -1,0 +1,109 @@
+<script>
+    /*
+        //Operadores Lógicos o booleanos
+
+                ==          comparación equals
+                !=          not equals
+                !           not 
+                < <= => >   comparación numerica
+        
+        Operadores de logica
+
+                &&          and             (& shift 6)
+                ||          or              (| altgr 1)
+        
+        Tabla de verdad
+
+                X       Y       OR      AND
+                F       F       F       F
+                F       V       V       F
+                V       F       V       F
+                V       V       V       V
+
+    */
+
+    nro1 = 5
+    nro2 = 7
+    log1 = true
+    log2 = false
+
+    lindoTiempo = true
+    tengoPlata = false
+
+    document.writeln((nro1 == nro2) + "<br>")       //false
+    document.writeln((nro1 == nro2 - 2) + "<br>")     //true
+    document.writeln((nro1 != nro2) + "<br>")       //true
+    document.writeln((nro1 != 5) + "<br>")          //false
+    document.writeln((nro1 < nro2) + "<br>")        //true
+    document.writeln((nro1 < 5) + "<br>")           //false
+    document.writeln((nro1 <= 5) + "<br>")          //true 
+
+    document.writeln((log1 || log2) + "<br>")       //true
+    document.writeln((log1 && log2) + "<br>")       //false 
+
+    lindoTiempo = false
+    tengoPlata = true
+    document.writeln("Salimos de vacaciones!!<br>")
+    //plata y buen tiempo
+    document.writeln((tengoPlata && lindoTiempo) + "<br>")
+
+    //Operador Not !
+    document.writeln(log1 + "<br>")           //true
+    document.writeln(!log1 + "<br>")          //false
+    document.writeln(!!log1 + "<br>")         //true
+    document.writeln(!!!log1 + "<br>")        //false
+    document.writeln(!!!!log1 + "<br>")       //true
+
+    document.writeln((nro1 <= 10 && !log1 == true) + "<br>")
+    //                    v     Y      F                    //false
+
+
+    document.writeln((nro1 >= 10 + 2 && !!log1 == true) + "<br>")
+    //                     F     Y        V                 //false
+
+
+    //volver a explicar IF
+    // Estructura condicional IF
+    log1 = true
+    llueve = false
+    nro1 = 10
+
+    if (log1) {
+        document.writeln("verdad1<br>")
+    }
+
+    if (llueve) {
+        document.writeln("usar paraguas!<br>")
+    }
+
+    if (llueve == true) {
+        document.writeln("usar paraguas!<br>")
+    }
+
+    if (nro1 == 10) {
+        document.writeln("verdad2<br>")
+    }
+
+    if (nro1 == 10 && llueve) {
+        document.writeln("verdad3<br>")
+    }
+
+    //Uso de llaves expandido
+    //Modo recomendado por Microsoft
+    //Recomendado en forma educativa
+
+    if (log1) 
+    {
+        document.writeln("verdad4<br>")
+    }
+
+    //Uso de llaves abreviado
+    if (log1) document.writeln("verdad5<br>")
+
+    //código indentado
+    if (log1) {
+        document.writeln("verdad6<br>")
+        //código indentado
+    }
+        
+</script>
