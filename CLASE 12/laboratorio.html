@@ -1,0 +1,152 @@
+<script src="https://crios2020.github.io/js/util.js"></script>
+<script>
+    // --------------------------------------------------
+    // Laboratorio  Estructura de control While
+    // --------------------------------------------------
+
+    // Ejercicio 1 
+    //Imprimir los números del 1 al 10 uno abajo del otro
+    writeln("-- Ejercicio 1 --")
+    a=1
+    while(a<=10){
+        writeln(a)
+        a++
+    }
+
+    //Ejercicio 2
+    //Imprimir los números del 1 al 10 salteando de a 2 uno abajo del otro
+    writeln("-- Ejercicio 2 --")
+    a=1
+    while(a<=10){
+        writeln(a)
+        a+=2
+        //a=a+2
+    }
+    // while(a<=10){
+    //     if(a%2!=0)  writeln(a)
+    //     a++
+    // }
+
+    //Ejercicio 3 
+    //Imprimir los números del 10 al 1 uno abajo del otro
+    writeln("-- Ejercicio 3 --")
+    a=10
+    while(a>=1){
+        writeln(a)
+        a--
+    }
+
+    //Ejercicio Bonus 
+    //Imprimir los números del 30 al 8 salteando de 3 en 3
+    // uno abajo del otro
+    writeln("-- Bonus --")
+    a=30
+    while(a>=8){
+        writeln(a)
+        //a-=3
+        a=a-3
+    }
+
+    //Ejercicio 4
+    //Imprimir los números del 1 al 10 sin imprimir números 2,5 y 9 uno abajo //del otro.
+    //Requisito: se necesita tener conocimientos del operador AND (&&) y del operador NOT  (!=)
+    writeln("-- Ejercicio 4 --")
+    a=1
+    while(a<=10){
+        if(a!=2 && a!=5 && a!=9)    writeln(a)
+        a++
+    }
+
+
+    //Ejercicio 5 
+    //Imprimir los números del 1 al 30 sin imprimir números entre 
+    //el 10 y el 20 uno abajo del otro.
+    //Requisitos: se necesita tener conocimientos del operador OR (||)  
+    writeln("-- Ejercicio 5 --")
+    a=1
+    while(a<=30){
+        if(a<10 || a>20)    writeln(a)
+        a++
+    }
+
+    //Ejercicio 6 
+    // Imprimir la suma de los números del 1 al 10
+    writeln("-- Ejercicio 6 --")
+    //writeln("Total: "+(1+2+3+4+5+6+7+8+9+10))
+    a=1
+    suma=0
+    while(a<=10){
+        suma+=a
+        a++
+    }
+    writeln("Total: "+suma)
+
+    // Ejercicio 7 
+    // Imprimir la suma de los números pares del 1 al 25
+    // Requisito: se necesita tener conocimiento del operador RESTO  // (%)
+    writeln("-- Ejercicio 7 --")
+    a=1
+    suma=0
+    while(a<=25){
+        if(a%2==0) suma+=a
+        a++
+    }
+    writeln("Total: "+suma)
+
+    // Ejercicio 8
+    //Imprimir la multiplicación de números impares 
+    //que se encuentran entre el -10 y 10
+    writeln("-- Ejercicio 8 --")
+    a=-10
+    multi=1
+    while(a<=10){
+        if(a%2!=0) multi*=a
+        a++
+    }
+    writeln("Total: "+multi)
+
+    //Operador resto repaso
+    writeln("-- Operador Resto % --")
+    writeln(15%2)           // 1
+    writeln(14%2)           // 0
+    writeln(-14%2)          // 0
+    writeln(0%2)            // 0
+    writeln(-15%2)          //-1
+
+    //Ejercicio 9
+    //Imprimir la suma de los números pares mayores a 9 
+    // y menores a 20
+    //que se encuentran entre el 1 y el 30
+    writeln("-- Ejercicio 9 --")
+    a=1
+    suma=0
+    while(a<=30){
+        if(a>9 && a<20 && a%2==0) suma+=a
+        a++
+    }
+    writeln("Total: "+suma)
+
+    // Ejercicio 10
+    // Una persona desea invertir $1000 en un banco, el
+    // cual le otorga un 2% de interés mensual ¿Cuál
+    // será la cantidad de dinero que esta persona
+    // tendrá al cabo de un año?
+    // En el primer mes tendrá acumulado 1000 $ más
+    // 20 $ de interés ( 2% de 1000 ). En el segundo
+    // mes se le sumará un 2% a la base de 1020 $ del
+    // mes anterior y así sucesivamente.
+    writeln("-- Ejercicio 10 --")
+    mes=1
+    monto=1000
+    while(mes<=12){
+        monto*=1.02
+        mes++
+    }
+    writeln("Capital: "+(monto.toFixed(2)))
+
+    console.log("Hola mundo Consola")
+    let num = 2.675;
+    console.log(num.toFixed(2)); // "2.67"
+    console.log(parseFloat(num.toFixed(2))); // 2.67
+    
+</script>

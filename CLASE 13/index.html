@@ -1,216 +1,78 @@
 <script src="https://crios2020.github.io/js/util.js"></script>
 <script>
-    // Ejercicio 1
-    // Imprimir los números del 1 al 10 uno abajo del otro.
-    writeln("-- Ejercicio 1 --")
-    for(a=1; a<=10; a++) {
+    // Clase 11 Estructura de repetición While
+
+    //Estructura While
+    a=1
+    writeln("-- Inicio Estructura While --")
+    while(a<=10){
         writeln(a)
+        a++
     }
-    // Ejercicio 2
-    // Imprimir los números del 1 al 10 salteando de a dos uno abajo del otro.
-    writeln("-- Ejercicio 2 --")
-    for(a=1; a<=10; a+=2) {
+    writeln("-- Fin Estructura While --")
+    writeln(a)
+
+    //Estructura do while
+    a=1
+    writeln("-- Inicio Estructura do While --")
+    do{
         writeln(a)
-    }
-    // Ejercicio 3
-    // Imprimir los números del 10 al 1 uno abajo del otro.
-    writeln("-- Ejercicio 3 --")
-    for(a=10; a>=1; a--) {
+        a++
+    }while(a<=10)
+    writeln("-- Fin Estructura do While --")
+    writeln(a)
+
+    //Modo de uso de llaves recomendado para java y javascript
+    a=1
+    while(a<=10){
         writeln(a)
-    }
-    // Ejercicio 4
-    // Imprimir la suma de los números impares del 1 al 10.
-    writeln("-- Ejercicio 4 --")
-    suma=0
-    for(a=1; a<=10; a++) {
-        if(a%2!=0) suma+=a
-    }
-    writeln("Total: "+suma)
-
-    // Ejercicio 5
-    // Mostrar la suma de
-    // la multiplicación de los números del 1 al 5
-    // con
-    // la suma de los números del 1 al 5.
-    writeln("-- Ejercicio 5 --")
-    suma=0
-    multi=1
-    for(a=1; a<=5; a++) {
-        multi*=a
-        suma+=a
-    }
-    writeln("Total: "+(suma+multi))
-
-    // Ejercicio 6
-    // Imprimir la siguiente figura utilizando la estructura for:
-    // @
-    // @
-    // @
-    // @
-    // @
-    writeln("-- Ejercicio 6 --")
-    for(a=1; a<=5; a++){
-        writeln("@")
-    }
- 
-    // bonus
-    // Imprimir la siguiente figura utilizando la estructura for:
-    // @@@@@
-    writeln("-- Bonus --")
-    for(a=1; a<=5; a++){
-        write("@")
-    }
-    writeln("")
-
-    // Ejercicio 7
-    // Imprimir la siguiente figura utilizando la estructura for:
-    // @                        // 1
-    // @@                       // 2
-    // @                        // 3
-    // @@                       // 4
-    // @                        // 5
-    writeln("-- Ejercicio 7 --")
-    for(a=1; a<=5; a++){
-        if(a%2==0)      writeln("@@")
-        else            writeln("@")
+        a++
     }
 
-    // Bonus
-    // @@@@@
-    // @@@@@
-    // @@@@@
-    // @@@@@
-    // @@@@@
-    writeln("-- Bonus --")
-    for(y=1; y<=5; y++){
-        for(x=1; x<=5; x++){
-            write("@")
-        }
-        writeln("")
+    //Modo de uso de llaves recomendado por microsoft o educativo
+    a=1
+    while(a<=10)
+    {
+        writeln(a)
+        a++
     }
 
-    // Ejercicio 8
-    // Imprimir la siguiente figura utilizando la estructura for:
-    // @
-    // @@
-    // @@@
-    // @@@@
-    // @@@@@
-    writeln("-- Ejercicio 8 --")
-    for(y=1; y<=5; y++){
-        for(x=1; x<=y; x++){
-            write("@")
-        }
-        writeln("")
-    }
+    //Modo abreviado
+    a=1
+    while(a<=10) writeln(a++)
 
-    // Ejercicio 9
-    // Imprimir la siguiente figura utilizando la estructura for:
-    // @@@@@
-    // @@@@
-    // @@@
-    // @@
-    // @
-    writeln("-- Ejercicio 9 --")
-    for(y=5; y>=1; y--){
-        for(x=1; x<=y; x++){
-            write("@")
-        }
-        writeln("")
-    }
+    //loop infinito
+    // a=1
+    // while(true){
+    //     writeln(a)
+    //     a++
+    // }
 
-    // Ejercicio 10
-    // Imprimir la siguiente figura utilizando la estructura for:
-    // @
-    // @@
-    // @@@
-    // @@@@
-    // @@@
-    // @@
-    // @
-    writeln("-- Ejercicio 10 --")
-    for(y=1; y<=4; y++){
-        for(x=1; x<=y; x++){
-            write("@")
-        }
-        writeln("")
-    }
-    for(y=3; y>=1; y--){
-        for(x=1; x<=y; x++){
-            write("@")
-        }
-        writeln("")
-    }
+    //loop infinito
+    // a=1
+    // while(a<=10 || true){
+    //     writeln(a)
+    //     a++
+    // }
 
-    // Ejercicio 11
-    // Imprimir la siguiente figura utilizando la estructura for:
-    // @@@@@
-    // @@@
-    // @
-    // @@@
-    // @@@@@
-    writeln("-- Ejercicio 11 --")
-    for(y=5; y>=1; y-=2){
-        for(x=1; x<=y; x++){
-            write("@")
-        }
-        writeln("")
-    }
-    for(y=3; y<=5; y+=2){
-        for(x=1; x<=y; x++){
-            write("@")
-        }
-        writeln("")
-    }
+    //loop infinito
+    // a=1
+    // while(a<=10 || a>=0){
+    //     writeln(a)
+    //     a++
+    // }
 
-    // Bonus
-    // @@@@@@@
-    // @@@ @@@
-    // @@   @@
-    // @     @
-    // @@   @@
-    // @@@ @@@
-    // @@@@@@@
-    writeln("-- Bonus --")
-    medio=4
-    for(y=0; y<=3; y++){
-        for(x=1;x<=7; x++){
-            if(x>=medio-y+1 && x<=medio+y-1)    write("__")
-            else                                write("@")
-        }
-        writeln("")
-    }
-    for(y=2; y>=0; y--){
-        for(x=1;x<=7; x++){
-            if(x>=medio-y+1 && x<=medio+y-1)    write("__")
-            else                                write("@")
-        }
-        writeln("")
-    }
+    //loop infinito
+    // a=1
+    // while(a<=10){
+    //     writeln(a--)
+    //     a++
+    // }
 
-    // Bonus 2
-    //    *
-    //   ***
-    //  *****
-    // *******
-    //  *****
-    //   ***
-    //    *
-    writeln("-- Bonus 2 --")
-    medio=4
-    for(y=0; y<=3; y++){
-        for(x=1;x<=7; x++){
-            if(x>=medio-y && x<=medio+y)    write("*")
-            else                            write("_")
-        }
-        writeln("")
-    }
-    for(y=2; y>=0; y--){
-        for(x=1;x<=7; x++){
-            if(x>=medio-y && x<=medio+y)    write("*")
-            else                            write("_")
-        }
-        writeln("")
-    }
+    //loop infinito
+    // a=1
+    // while(a<=10){
+    //     writeln(a)
+    // }
 
 </script>

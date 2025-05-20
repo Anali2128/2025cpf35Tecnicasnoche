@@ -1,0 +1,97 @@
+<script src="https://crios2020.github.io/js/util.js"></script>
+<script>
+
+    //Estructura While
+    a=1
+    writeln("-- Inicio Estructura While --")
+    while(a<=10){
+        writeln(a)
+        a++
+    }
+    writeln("-- Fin Estructura While --")
+    writeln(a)
+
+    //Estructura de repetición for
+    writeln("-- Inicio Estructura For --")
+    for(a=1; a<=10 ; a++){
+        writeln(a)
+    }
+    writeln("-- Fin Estructura For --")
+    writeln(a)
+
+    //modo de uso de llaves recomendado para js y java
+    for(a=1; a<=10 ; a++){
+        writeln(a)
+    }
+    //modo de uso de llaves recomendado por microsoft o educativo
+    for(a=1; a<=10 ; a++)
+    {
+        writeln(a)
+    }
+    //modo de uso de llaves abreviado
+    for(a=1; a<=10 ; a++) writeln(a)
+    
+    //for anidado
+    cont=1
+    for(r=1; r<=10; r++){
+        for(s=1; s<=10; s++){
+            for(t=1; t<=10; t++){
+                writeln(r+" "+s+" "+t+" "+cont)
+                cont++
+            }
+        }
+    }
+
+    //Horas de día
+    for(hora=0; hora<24; hora++){
+        for(minuto=0; minuto<60; minuto++){
+            for(segundo=0; segundo<60; segundo++){
+                writeln(String(hora).padStart(2,"0")+":"+
+                        String(minuto).padStart(2,"0")+":"+
+                        String(segundo).padStart(2,"0"))
+            }
+        }
+    }
+
+    //Loop infinito
+    // for(a=1;;a++){
+    //     writeln(a)
+    // }
+
+    //Loop infinito
+    // for(a=1;true;a++){
+    //     writeln(a)
+    // }
+
+    //Loop infinito
+    // for(a=1;a<=10 || true;a++){
+    //     writeln(a)
+    // }
+
+    // //Loop infinito
+    // for(a=1;a<=10 || a>=1;a++){
+    //     writeln(a)
+    // }
+    
+    // for(a=1;a<=10;){
+    //     writeln(a)
+    // }
+
+    //Loop infinito
+    //for(a=1;a<=10;a++){
+    //    writeln(a--)
+    //}
+
+    //Loop infinito
+    //b=2
+    //for(a=b; a<=10; b++){
+    //    writeln(a)
+    //}  
+    
+    //Loop infinito
+    //b=2
+    //for(a=b; b<=10; a++){
+    //    writeln(a)
+    //}  
+
+</script>

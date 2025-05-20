@@ -1,0 +1,65 @@
+<script src="https://crios2020.github.io/js/util.js"></script>
+<script>
+    
+    //Vectores - Arreglos - Arrays
+
+    //Declaración de un vector
+    numeros=[]
+    nombres=[]
+
+    //cargar el vector
+    numeros[0]=1
+    nombres[0]="Juan"
+    numeros[1]=2
+    nombres[1]="Maria"
+    numeros[2]=3
+    nombres[2]="Javier"
+    numeros[3]=4
+    nombres[3]="Ana"
+
+    /*
+            numeros         nombres         indice
+                1           Juan                0
+                2           Maria               1
+                3           Javier              2
+                4           Ana                 3
+
+    */
+
+    print(numeros[2]+" "+nombres[2])
+    print("------------------------------------------------")
+    //recorrido del vector
+    for(a=0; a<4; a++){
+        print(numeros[a]+" "+nombres[a])
+    }
+
+    //length - longitud de vector
+    print("Longitud: "+numeros.length)
+
+    print("------------------------------------------------")
+    //Recorrido usando length
+    for(a=0; a<numeros.length; a++){
+        print(numeros[a]+" "+nombres[a])
+    }
+
+    print("------------------------------------------------")
+    //Recorrido usando while
+    a=0
+    while(a<numeros.length){
+        print(numeros[a]+" "+nombres[a])
+        a++
+    }
+
+    print("------------------------------------------------")
+    //Recorrido reverso
+    for(a=numeros.length-1; a>=0; a--){
+        print(numeros[a]+" "+nombres[a])
+    }
+
+
+    //TODO Definición abreviada
+    //TODO Operaciones de vectores numericos
+    
+
+
+</script>
