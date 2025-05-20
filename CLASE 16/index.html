@@ -1,51 +1,107 @@
 <script src="https://crios2020.github.io/js/util.js"></script>
 <script>
+    
+    //Vectores - Arreglos - Arrays
+
+    //Declaración de un vector
+    numeros=[]
+    nombres=[]
+
+    //cargar el vector
+    numeros[0]=1
+    nombres[0]="Juan"
+    numeros[1]=2
+    nombres[1]="Maria"
+    numeros[2]=3
+    nombres[2]="Javier"
+    numeros[3]=4
+    nombres[3]="Ana"
+
     /*
-    for(a=0; a<frases.length; a++){
-        writeln(frases[a])
+            numeros         nombres         indice
+                1           Juan                0
+                2           Maria               1
+                3           Javier              2
+                4           Ana                 3
+
+    */
+
+    print(numeros[2]+" "+nombres[2])
+    print("------------------------------------------------")
+    //recorrido del vector
+    for(a=0; a<4; a++){
+        print(numeros[a]+" "+nombres[a])
     }
-    */
 
-    /*
-        Desafio: dado el vector frases
+    //length - longitud de vector
+    print("Longitud: "+numeros.length)
 
-        1 - contar cuantas frases tienen la letra z?
-        2 - cual es la frase menor alfabeticamente?
-        3 - cual es la frase mayor alfabeticamente?
-        4 - imprimir el vector todo en mayusculas
-        5 - imprimir las frases cuyo indice es multiplo de 5
+    print("------------------------------------------------")
+    //Recorrido usando length
+    for(a=0; a<numeros.length; a++){
+        print(numeros[a]+" "+nombres[a])
+    }
 
-    */
+    print("------------------------------------------------")
+    //Recorrido usando while
+    a=0
+    while(a<numeros.length){
+        print(numeros[a]+" "+nombres[a])
+        a++
+    }
 
-</script>
-<script src="https://crios2020.github.io/js/util.js"></script>
-<script>
-    
-    //imprime el vector frases 
-    //for(a=0; a<frases.length; a++){
-    //    writeln(frases[a])
-    //}
-    
-    //10 frases aleatoreas
-    //for(a=1; a<=10; a++){
-    //    frase=getFraseRandom()
-    //    print(frase)
-    //    hablar(frase)
-    //}
+    print("------------------------------------------------")
+    //Recorrido reverso
+    for(a=numeros.length-1; a>=0; a--){
+        print(numeros[a]+" "+nombres[a])
+    }
 
-    print("Cantidad de frases: "+frases.length)
 
-    /*
-        Desafio: dado el vector frases
+    //Definición abreviada
+    semana=['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo']
+    vector=[10,23,26,23,29,38,39,10,6,46,65,30,10,8,72,14,18,10]
 
-        1 - contar cuantas frases tienen la letra z?
-        2 - cual es la frase menor alfabeticamente?
-        3 - cual es la frase mayor alfabeticamente?
-        4 - imprimir el vector todo en mayusculas
-        5 - imprimir las frases cuyo indice es multiplo de 5
+    //Recorrido de vector
+    print("Longitud vector: "+vector.length)
+    for(a=0; a<vector.length; a++){
+        printx(vector[a]+", ")
+    }
+    print("")
 
-    */
+    //Operaciones de vectores numericos
+    //Totalizar y promediar un vector
+    suma=0
+    for(a=0; a<vector.length; a++){
+        suma+=vector[a]
+    }
+    print("Total: "+suma)
+    print("Promedio: "+(suma/vector.length).toFixed(2))
 
-    
+
+    //Buscar el valor máximo y valor mínimo
+    max=vector[0]
+    min=vector[0]
+    for(a=0; a<vector.length; a++){
+        if(max<vector[a])       max=vector[a]
+        if(min>vector[a])       min=vector[a]
+    }
+    print("Valor Máximo: "+max)
+    print("Valor Mínimo: "+min)
+
+    //Contar cantidad números pares
+    //Contar cantidad números impares
+    //Contar cantidad de 10
+    contPares=0
+    contImpares=0
+    cont10=0
+    for(a=0; a<vector.length; a++){
+        if(vector[a]%2==0)      contPares++;
+        else                    contImpares++;
+        if(vector[a]==10)       cont10++
+    }
+    print("Cantidad números pares: "+contPares)
+    print("Cantidad números impares: "+contImpares)
+    print("Cantidad 10: "+cont10)
+
 
 </script>

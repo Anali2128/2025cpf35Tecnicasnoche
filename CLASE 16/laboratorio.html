@@ -1,0 +1,66 @@
+<script src="https://crios2020.github.io/js/util.js"></script>
+<script>
+    
+    //imprime el vector frases 
+    //for(a=0; a<frases.length; a++){
+    //    writeln(frases[a])
+    //}
+    
+    //10 frases aleatoreas
+    //for(a=1; a<=10; a++){
+    //    frase=getFraseRandom()
+    //    print(frase)
+    //    hablar(frase)
+    //}
+
+    print("Cantidad de frases: "+frases.length)
+
+    /*
+        Desafio: dado el vector frases
+
+        1 - contar cuantas frases tienen la letra z?
+        2 - cual es la frase menor alfabeticamente?
+        3 - cual es la frase mayor alfabeticamente?
+        4 - imprimir el vector todo en mayusculas
+        5 - imprimir las frases cuyo indice es multiplo de 5
+
+    */
+
+    print("1 - contar cuantas frases tienen la letra z?")
+    contZ=0
+    for(a=0; a<frases.length; a++){
+        if(frases[a].toLowerCase().includes("z"))   contZ++
+    }
+    print("Cantidad de frases con letra Z: "+contZ)
+
+    contCarpi=0
+    for(a=0; a<frases.length; a++){
+        if(frases[a].toLowerCase().includes("carpincho"))   contCarpi++
+    }
+    print("Cantidad de frases con letra carpincho: "+contCarpi)
+
+    print("2 - cual es la frase menor alfabeticamente?")
+    minFrase=frases[0]
+    for(a=0; a<frases.length; a++){
+        if(minFrase>frases[a])      minFrase=frases[a]
+    }
+    print("Frase menor: "+minFrase)
+    
+    print("3 - cual es la frase mayor alfabeticamente?")
+    maxFrase=frases[0]
+    for(a=0; a<frases.length; a++){
+        if(maxFrase<frases[a])      maxFrase=frases[a]
+    }
+    print("Frase mayor: "+maxFrase)
+
+    print("4 - imprimir el vector todo en mayusculas")
+    for(a=0; a<frases.length; a++){
+        print(frases[a].toUpperCase())
+    }
+
+    print("5 - imprimir las frases cuyo indice es multiplo de 5")
+    for(a=0; a<frases.length; a++){
+        if(a%5==0)  print(frases[a])
+    }
+
+</script>
